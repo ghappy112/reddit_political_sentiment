@@ -34,7 +34,7 @@ def reddit_political_sentiment():
                 <h1>Political Candidates' Reddit Sentiment Dashboard</h1>
                 <p>Dashboard updates every 3 hours with the latest Reddit data</p>
                 <br>
-                <iframe title="candidate_reddit_political_sentiment_dashboard" id="powerBIiframeID"src="src" frameborder="0" allowFullScreen="true"></iframe>
+                <iframe title="candidate_reddit_political_sentiment_dashboard" id="powerBIiframeID" src="src" frameborder="0" allowFullScreen="true"></iframe>
                 <br>
                 <h1><a href="https://github.com/ghappy112/reddit_political_sentiment">GitHub</a></h1>
             </div>
