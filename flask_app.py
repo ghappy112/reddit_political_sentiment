@@ -11,7 +11,7 @@ def reddit_political_sentiment():
                 const screenWidth = window.screen.width;
                 const screenHeight = window.screen.height;
 
-                // Get iframe ID
+                // Get iframe
                 var iframe = document.getElementById('powerBIiframeID')
 
                 // Set width and height
