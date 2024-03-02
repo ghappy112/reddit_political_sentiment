@@ -22,6 +22,9 @@ def reddit_political_sentiment():
                 if (height > screenHeight - 285) {
                     var height = screenHeight - 285
                     var width = (600/373.5) * height
+                } else if (height < 373.5) {
+                    var height = 373.5
+                    var width = 600
                 }
 
                 // Set iframe width and height
