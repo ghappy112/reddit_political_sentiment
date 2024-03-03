@@ -8,8 +8,8 @@ def reddit_political_sentiment():
         <script>
             function mainJSFunction() {
                 // Get the screen width and height
-                const screenWidth = window.screen.width;
-                const screenHeight = window.screen.height;
+                const screenWidth = window.innerWidth;
+                const screenHeight = window.innerHeight;
 
                 // Get iframe
                 var iframe = document.getElementById('powerBIiframeID')
@@ -19,8 +19,8 @@ def reddit_political_sentiment():
                 var height = (373.5/600) * screenWidth;
 
                 // Reset width and height if needed
-                if (height > screenHeight - 285) {
-                    var height = screenHeight - 285
+                if (height > screenHeight) {
+                    var height = screenHeight
                     var width = (600/373.5) * height
                 } else if (height < 373.5) {
                     var height = 373.5
