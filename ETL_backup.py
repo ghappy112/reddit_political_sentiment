@@ -61,7 +61,6 @@ def get_date_str(timestamp):
 
 start_time = time.time()
 
-
 start_timestamp = int(datetime.strptime(start_datetime, '%Y-%m-%d').timestamp())
 end_timestamp = int(datetime.strptime(end_datetime, '%Y-%m-%d').timestamp()) + 86400
 #counter = int(start_datetime[-2:].replace("-", ""))
@@ -146,3 +145,6 @@ for row in tqdm(df.values):
     insert_query = 'INSERT OR IGNORE INTO reddit_posts (pk, user_id, timestamp, text, votes, candidate, polarity, subjectivity) VALUES (?, ?, ?, ?, ?, ?, ?, ?)'
     cursor.execute(insert_query, data_to_insert)
     conn.commit()
+
+
+conn.close()
