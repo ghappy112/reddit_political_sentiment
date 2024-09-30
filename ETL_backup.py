@@ -1,3 +1,6 @@
+# this program can be ran to gather new or missing data as a backup for ETL_and_FeatEng.py
+
+
 # user input dates
 start_datetime = '2024-06-01'  # Enter start date
 end_datetime = '2024-09-29'  # Enter end date
