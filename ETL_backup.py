@@ -131,7 +131,7 @@ df["candidate"] = candidate
 df = df[["author", "created_utc", "text", "score", "candidate", "polarity", "subjectivity", "pk"]]
 
 
-conn = sqlite3.connect("C:/Users/gregh/OneDrive/Desktop/reddit_political_sentiment/database/reddit_political_sentiment_database.db")
+conn = sqlite3.connect("reddit_political_sentiment_database.db")
 cursor = conn.cursor()
 
 
