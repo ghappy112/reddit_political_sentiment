@@ -26,11 +26,11 @@ def query(q, after_timestamp, before_timestamp, base_url='https://api.pullpush.i
     # Define your query parameters
     params = {
         'q': q,  # Search term
-        #'subreddit': 'learnpython',  # Subreddit to search in
+        #'subreddit': 'learnpython',
         'size': 100,  # Number of results to return
-        'before': before_timestamp,  # Only search for comments before the specified date and time
+        'before': before_timestamp,  # Only search for posts before the specified date and time
         'after': after_timestamp,
-        'sort_type': 'score', # Sort by score (use 'hot' to sort by hotness)
+        'sort_type': 'score', # Sort by score
         'sort': 'desc'
     }
 
