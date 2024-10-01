@@ -60,6 +60,6 @@ plt.ylim(0, 1)
 acc = round(sum(df2["pred_label"] == df2["correct sentiment"]) / len(df2), 2)
 plt.title(f"{acc} accuracy")
 
-plt.savefig('accuracy.jpeg', format='jpeg', quality=100)
+plt.savefig('accuracy_auc.jpeg', format='jpeg', quality=100)
 
 plt.show()
