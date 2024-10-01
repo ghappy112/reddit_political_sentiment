@@ -49,7 +49,7 @@ from sklearn import metrics
 fpr, tpr, thresholds = metrics.roc_curve(y, pred)
 roc_auc = metrics.auc(fpr, tpr)
 display = metrics.RocCurveDisplay(fpr=fpr, tpr=tpr, roc_auc=roc_auc,
-                                  estimator_name='example estimator')
+                                  estimator_name='Vader Sentiment Clf')
 display.plot()
 
 plt.plot([0, 1], [0, 1], linestyle="dashed")
