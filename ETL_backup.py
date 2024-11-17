@@ -74,7 +74,7 @@ df = [query(q, after_timestamp, before_timestamp)]
 elapsed_time = time.time() - start_time
 print(counter, get_date_str(after_timestamp), get_date_str(before_timestamp), f"{elapsed_time} seconds")
 
-while before_timestamp != end_timestamp:
+while before_timestamp < end_timestamp:
     after_timestamp += 86400
     before_timestamp = after_timestamp + 86400
     try:
